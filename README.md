@@ -3,6 +3,9 @@
 [![Author](https://img.shields.io/badge/Author-DrLucifer1810-0ea5e9?style=flat-square&logo=github)](https://github.com/DrLucifer1810)
 [![Focus](https://img.shields.io/badge/Focus-Distributed%20Systems%20%7C%20High%20Concurrency%20%7C%20Cognitive%20Nodes-6366f1?style=flat-square)](https://github.com/DrLucifer1810)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=flat-square)](LICENSE)
+[![Bilingual](https://img.shields.io/badge/Language-English%20%7C%20Ti%E1%BA%BFng%20Vi%E1%BB%87t-blue?style=flat-square)](README.vi.md)
+
+[🌐 English Edition (Current)](README.md) | [🇻🇳 Phiên bản Tiếng Việt](README.vi.md)
 
 > A curated collection of real-world production engineering case studies, architectural blueprints, and sanitized technical implementations. This repository demonstrates how complex distributed systems and autonomous AI ecosystems are designed, optimized, and operated at scale.
 
@@ -22,12 +25,12 @@ Rather than theoretical tutorials or toy projects, this repository documents bat
 
 ## 📂 Project Case Study Catalog
 
-This repository is structured into distinct, modular case studies under the [`projects/`](./projects) directory, allowing multiple systems to be documented with deep technical rigor.
+This repository is structured into distinct, modular case studies under the [`projects/`](./projects) directory, with **independent English and Vietnamese versions** for each project.
 
-| Project Case Study | Primary Domain | Core Tech Stack | Scale & Architectural Highlights |
+| Project Case Study | Primary Domain | Core Tech Stack | Language Editions |
 | :--- | :--- | :--- | :--- |
-| [**Biztada Platform**](./projects/biztada-distributed-automation/) | **Distributed Automation Mesh & Real-time AI CRM** | Go, Python, Redis Streams, MQTT, Cloudflare Edge, Playwright, K3s, MongoDB, MySQL | • **1,000+** concurrent worker nodes behind NAT<br>• Dual-channel control (MQTT QoS 1 + Dynamic Tunnel streaming)<br>• At-least-once task delivery with Redis Lease Locks<br>• Zero-trust Telegram MTProto Sidecar authentication |
-| [**Fusio SuperApp**](./projects/fusio-cognitive-desktop-superapp/) | **Decentralized Cognitive Node & Desktop SuperApp** | Rust (Tauri v2), Python 3.11, React 18, SQLite WAL, TDLib MTProto, LibP2P | • **0ms memory latency** via SQLite WAL Session Blackboard<br>• **10,000% speedup** via Deterministic Macro Compiler<br>• **2GB–4GB** media streaming in native Rust avoiding Python GIL<br>• Cognitive Overwatch eliminating infinite hallucination loops<br>• P2P Symbio Node & Gossip Protocol consensus |
+| [**Biztada Platform**](./projects/biztada-distributed-automation/) | **Distributed Automation Mesh & Real-time AI CRM** | Go, Python, Redis Streams, MQTT, Cloudflare Edge, Playwright, K3s, MongoDB, MySQL | • [🇺🇸 English Edition](./projects/biztada-distributed-automation/en/README.md)<br>• [🇻🇳 Phiên bản Tiếng Việt](./projects/biztada-distributed-automation/vi/README.md) |
+| [**Fusio SuperApp**](./projects/fusio-cognitive-desktop-superapp/) | **Decentralized Cognitive Node & Desktop SuperApp** | Rust (Tauri v2), Python 3.11, React 18, SQLite WAL, TDLib MTProto, LibP2P | • [🇺🇸 English Edition](./projects/fusio-cognitive-desktop-superapp/en/README.md)<br>• [🇻🇳 Phiên bản Tiếng Việt](./projects/fusio-cognitive-desktop-superapp/vi/README.md) |
 
 ---
 
@@ -37,6 +40,7 @@ Every architectural design documented in this repository adheres to four fundame
 
 ### 1. Separation of Control Plane and Data Plane
 High-volume data streams (video streaming, browser remote debugging, large file transfers) are strictly decoupled from lightweight, low-latency control signals (heartbeats, lease renewals, task dispatch commands). This ensures command responsiveness even under saturated network links.
+- *Detailed pattern:* [English](./shared-principles/en/distributed-patterns.md) | [Tiếng Việt](./shared-principles/vi/distributed-patterns.md)
 
 ### 2. Zero-Trust Edge & Process Isolation
 No sensitive backend core service or native system resource is directly exposed. Edge runtimes (Cloudflare Pages Functions) insulate cloud APIs, while native Rust kernels sandbox Python AI subprocesses and enforce hardware permission boundaries.
@@ -53,22 +57,24 @@ Repeated business automation workflows are captured and compiled into native, de
 
 ```text
 system-architecture-case-studies/
-├── README.md                                 # Master Portfolio Hub (Current File)
+├── README.md                                 # Master Portfolio Hub (English)
+├── README.vi.md                              # Master Portfolio Hub (Tiếng Việt)
 ├── shared-principles/                        # Universal patterns and engineering standards
-│   └── distributed-patterns.md              # Distributed locking, lease managers & state machines
+│   ├── en/distributed-patterns.md           # Distributed locking, lease managers & state machines (EN)
+│   └── vi/distributed-patterns.md           # Các mẫu thiết kế hệ thống phân tán cốt lõi (VI)
 │
 ├── projects/
 │   ├── biztada-distributed-automation/       # Case Study 1: Biztada System Architecture
-│   │   ├── README.md                         # Executive overview, C4 topology, key metrics
-│   │   ├── architecture/                     # Microservices, Dual-Channel mesh, Redis Streams, Edge auth
-│   │   ├── deep-dives/                       # Bottlenecks: Browser RAM, network flakiness, state drift
-│   │   └── sanitized-code/                   # Reference implementations in Go, Python, TypeScript
+│   │   ├── README.md                         # Language switcher & executive overview
+│   │   ├── en/                               # Complete English Edition (Architecture & Deep Dives)
+│   │   ├── vi/                               # Toàn bộ ấn bản Tiếng Việt (Kiến trúc & Nghiên cứu sâu)
+│   │   └── sanitized-code/                   # Runnable Reference implementations (Go, Python, TS)
 │   │
 │   └── fusio-cognitive-desktop-superapp/     # Case Study 2: Fusio Cognitive Desktop Node
-│       ├── README.md                         # Executive overview, Hybrid topology, core innovations
-│       ├── architecture/                     # Tauri + Python Brain, Dynamic DAG, Blackboard, P2P Symbio
-│       ├── deep-dives/                       # Cognitive Overwatch, Macro Compiler (100x), Rust MTProto GIL
-│       └── sanitized-code/                   # Reference implementations in Rust, Python (Blackboard & Compiler)
+│       ├── README.md                         # Language switcher & executive overview
+│       ├── en/                               # Complete English Edition (Architecture & Deep Dives)
+│       ├── vi/                               # Toàn bộ ấn bản Tiếng Việt (Kiến trúc & Nghiên cứu sâu)
+│       └── sanitized-code/                   # Runnable Reference implementations (Rust, Python)
 │
 ├── .gitignore
 └── LICENSE                                   # MIT License
