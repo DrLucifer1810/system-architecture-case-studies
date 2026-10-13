@@ -3,9 +3,9 @@
 [![Architect](https://img.shields.io/badge/Architect-DrLucifer1810-0ea5e9?style=flat-square&logo=github)](https://github.com/DrLucifer1810)
 [![Role](https://img.shields.io/badge/Role-Principal%20Systems%20Architect%20%7C%20Staff%20Distributed%20Engineer-6366f1?style=flat-square)](https://github.com/DrLucifer1810)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=flat-square)](LICENSE)
-[![Bilingual](https://img.shields.io/badge/Language-English%20%7C%20Ti%E1%BA%BFng%20Vi%E1%BB%87t-blue?style=flat-square)](PROFILE.vi.md)
+[![Vietnamese Edition](https://img.shields.io/badge/Language-Ti%E1%BA%BFng%20Vi%E1%BB%87t%20Dossier-emerald?style=flat-square)](https://github.com/DrLucifer1810/system-architecture-case-studies-vi/blob/main/PROFILE.md)
 
-[🌐 English Edition (Current)](PROFILE.md) | [🇻🇳 Phiên bản Tiếng Việt](PROFILE.vi.md)
+[🌐 English Edition (Current)](PROFILE.md) | [🇻🇳 Phiên bản Tiếng Việt](https://github.com/DrLucifer1810/system-architecture-case-studies-vi/blob/main/PROFILE.md)
 
 ---
 

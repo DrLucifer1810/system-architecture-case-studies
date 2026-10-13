@@ -3,9 +3,9 @@
 [![Author](https://img.shields.io/badge/Author-DrLucifer1810-0ea5e9?style=flat-square&logo=github)](https://github.com/DrLucifer1810)
 [![Domain](https://img.shields.io/badge/Domain-Distributed%20Systems%20%7C%20Edge%20Clusters%20%7C%20Cognitive%20Nodes-6366f1?style=flat-square)](https://github.com/DrLucifer1810)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=flat-square)](LICENSE)
-[![Bilingual](https://img.shields.io/badge/Language-English%20%7C%20Ti%E1%BA%BFng%20Vi%E1%BB%87t-blue?style=flat-square)](README.vi.md)
+[![Vietnamese Edition](https://img.shields.io/badge/Language-B%E1%BA%A3n%20Ti%E1%BA%BFng%20Vi%E1%BB%87t-emerald?style=flat-square)](https://github.com/DrLucifer1810/system-architecture-case-studies-vi)
 
-[🌐 English Edition (Current)](README.md) | [🇻🇳 Phiên bản Tiếng Việt](README.vi.md)
+[🌐 English Edition (Current)](README.md) | [🇻🇳 Phiên bản Tiếng Việt (Bản Tiếng Việt)](https://github.com/DrLucifer1810/system-architecture-case-studies-vi)
 
 > A curated collection of real-world production engineering case studies, architectural blueprints, and sanitized technical implementations. This repository demonstrates how complex distributed systems, autonomous AI ecosystems, bare-metal edge cloud infrastructures, and OS-level telemetry engines are designed, optimized, and operated at scale.
 
@@ -29,12 +29,12 @@ Rather than theoretical tutorials or toy projects, this repository documents bat
 
 This repository is structured into distinct, modular case studies under the [`projects/`](./projects) directory, with **independent English and Vietnamese versions** for each project.
 
-| Project Case Study | Primary Domain | Core Tech Stack | Language Editions |
+| Project Case Study | Primary Domain | Core Tech Stack | Architecture & Reference Code |
 | :--- | :--- | :--- | :--- |
-| [**Biztada Platform**](./projects/biztada-distributed-automation/) | **Distributed Automation Mesh & Real-time AI CRM** | Go, Python, Redis Streams, MQTT, Cloudflare Edge, Playwright, K3s, MongoDB, MySQL | • [🇺🇸 English Edition](./projects/biztada-distributed-automation/en/README.md)<br>• [🇻🇳 Phiên bản Tiếng Việt](./projects/biztada-distributed-automation/vi/README.md) |
-| [**Fusio SuperApp**](./projects/fusio-cognitive-desktop-superapp/) | **Decentralized Cognitive Node & Desktop SuperApp** | Rust (Tauri v2), Python 3.11, React 18, SQLite WAL, TDLib MTProto, LibP2P | • [🇺🇸 English Edition](./projects/fusio-cognitive-desktop-superapp/en/README.md)<br>• [🇻🇳 Phiên bản Tiếng Việt](./projects/fusio-cognitive-desktop-superapp/vi/README.md) |
-| [**Local Server Cluster**](./projects/local-server-edge-k8s-cluster/) | **Edge Bare-Metal Kubernetes Micro-Datacenter** | K3d, K3s, Docker Registry, Cloudflare Tunnels, Dual-WAN 4G, LiFePO4 EPS | • [🇺🇸 English Edition](./projects/local-server-edge-k8s-cluster/en/README.md)<br>• [🇻🇳 Phiên bản Tiếng Việt](./projects/local-server-edge-k8s-cluster/vi/README.md) |
-| [**MyDNA Coworker Passport**](./projects/mydna-ai-coworker-passport/) | **OS Telemetry, Privacy-First PIR & AI-Coworker Passport** | Rust (Tauri v2), Win32 API, Axum (MCP Server), SQLite WAL, Dreyfus & Bloom Matrix | • [🇺🇸 English Edition](./projects/mydna-ai-coworker-passport/en/README.md)<br>• [🇻🇳 Phiên bản Tiếng Việt](./projects/mydna-ai-coworker-passport/vi/README.md) |
+| [**Biztada Platform**](./projects/biztada-distributed-automation/) | **Distributed Automation Mesh & Real-time AI CRM** | Go, Python, Redis Streams, MQTT, Cloudflare Edge, Playwright, K3s, MongoDB, MySQL | [📖 Architecture Blueprint](./projects/biztada-distributed-automation/)<br>• [Runnable Reference Code](./projects/biztada-distributed-automation/sanitized-code/) |
+| [**Fusio SuperApp**](./projects/fusio-cognitive-desktop-superapp/) | **Decentralized Cognitive Node & Desktop SuperApp** | Rust (Tauri v2), Python 3.11, React 18, SQLite WAL, TDLib MTProto, LibP2P | [📖 Architecture Blueprint](./projects/fusio-cognitive-desktop-superapp/)<br>• [Runnable Reference Code](./projects/fusio-cognitive-desktop-superapp/sanitized-code/) |
+| [**Local Server Cluster**](./projects/local-server-edge-k8s-cluster/) | **Edge Bare-Metal Kubernetes Micro-Datacenter** | K3d, K3s, Docker Registry, Cloudflare Tunnels, Dual-WAN 4G, LiFePO4 EPS | [📖 Architecture Blueprint](./projects/local-server-edge-k8s-cluster/)<br>• [Runnable Reference Code](./projects/local-server-edge-k8s-cluster/sanitized-code/) |
+| [**MyDNA Coworker Passport**](./projects/mydna-ai-coworker-passport/) | **OS Telemetry, Privacy-First PIR & AI-Coworker Passport** | Rust (Tauri v2), Win32 API, Axum (MCP Server), SQLite WAL, Dreyfus & Bloom Matrix | [📖 Architecture Blueprint](./projects/mydna-ai-coworker-passport/)<br>• [Runnable Reference Code](./projects/mydna-ai-coworker-passport/sanitized-code/) |
 
 ---
 
@@ -44,7 +44,7 @@ Every architectural design documented in this repository adheres to six fundamen
 
 ### 1. Separation of Control Plane and Data Plane
 High-volume data streams (video streaming, browser remote debugging, large file transfers) are strictly decoupled from lightweight, low-latency control signals (heartbeats, lease renewals, task dispatch commands). This ensures command responsiveness even under saturated network links.
-- *Detailed pattern:* [English](./shared-principles/en/distributed-patterns.md) | [Tiếng Việt](./shared-principles/vi/distributed-patterns.md)
+- *Detailed pattern:* [📖 Distributed Architecture Patterns](./shared-principles/distributed-patterns.md)
 
 ### 2. Zero-Trust Edge & Process Isolation
 No sensitive backend core service or native system resource is directly exposed. Edge runtimes (Cloudflare Pages Functions & Zero Trust Tunnels) insulate cloud and local APIs, while native Rust kernels sandbox Python AI subprocesses and enforce hardware permission boundaries.
@@ -67,36 +67,35 @@ Human-AI interaction signals and operating system telemetry are scrubbed locally
 
 ```text
 system-architecture-case-studies/
-├── README.md                                 # Master Portfolio Hub (English)
-├── README.vi.md                              # Master Portfolio Hub (Tiếng Việt)
+├── README.md                                 # Master Portfolio Hub (English Standard)
+├── PROFILE.md                                # Lead Architect Professional Dossier
 ├── shared-principles/                        # Universal patterns and engineering standards
-│   ├── en/distributed-patterns.md           # Distributed locking, lease managers & state machines (EN)
-│   └── vi/distributed-patterns.md           # Các mẫu thiết kế hệ thống phân tán cốt lõi (VI)
+│   └── distributed-patterns.md              # Distributed locking, lease managers & state machines
 │
 ├── projects/
 │   ├── biztada-distributed-automation/       # Case Study 1: Biztada System Architecture
-│   │   ├── README.md                         # Language switcher & executive overview
-│   │   ├── en/                               # Complete English Edition (Architecture & Deep Dives)
-│   │   ├── vi/                               # Toàn bộ ấn bản Tiếng Việt (Kiến trúc & Nghiên cứu sâu)
+│   │   ├── README.md                         # Architectural Blueprint & Production Specs
+│   │   ├── architecture/                     # 4 In-depth Architectural Specifications
+│   │   ├── deep-dives/                       # 3 Production Engineering Deep Dives
 │   │   └── sanitized-code/                   # Runnable Reference implementations (Go, Python, TS)
 │   │
 │   ├── fusio-cognitive-desktop-superapp/     # Case Study 2: Fusio Cognitive Desktop Node
-│   │   ├── README.md                         # Language switcher & executive overview
-│   │   ├── en/                               # Complete English Edition (Architecture & Deep Dives)
-│   │   ├── vi/                               # Toàn bộ ấn bản Tiếng Việt (Kiến trúc & Nghiên cứu sâu)
+│   │   ├── README.md                         # Architectural Blueprint & Production Specs
+│   │   ├── architecture/                     # 4 In-depth Architectural Specifications
+│   │   ├── deep-dives/                       # 3 Production Engineering Deep Dives
 │   │   └── sanitized-code/                   # Runnable Reference implementations (Rust, Python)
 │   │
 │   ├── local-server-edge-k8s-cluster/        # Case Study 3: Local Server Bare-Metal K8s Cluster
-│   │   ├── README.md                         # Language switcher & executive overview
-│   │   ├── en/                               # Complete English Edition (Architecture & Deep Dives)
-│   │   ├── vi/                               # Toàn bộ ấn bản Tiếng Việt (Kiến trúc & Nghiên cứu sâu)
+│   │   ├── README.md                         # Architectural Blueprint & Production Specs
+│   │   ├── architecture/                     # 4 In-depth Architectural Specifications
+│   │   ├── deep-dives/                       # 3 Production Engineering Deep Dives
 │   │   └── sanitized-code/                   # Runnable Reference implementations (Shell, K8s YAML, Python)
 │   │
 │   └── mydna-ai-coworker-passport/           # Case Study 4: MyDNA OS Telemetry & Skill Passport
-│       ├── README.md                         # Language switcher & executive overview
-│       ├── en/                               # Complete English Edition (Architecture & Deep Dives)
-│       ├── vi/                               # Toàn bộ ấn bản Tiếng Việt (Kiến trúc & Nghiên cứu sâu)
-│       └── sanitized-code/                   # Runnable Reference implementations (Rust, Axum, Python)
+│   │   ├── README.md                         # Architectural Blueprint & Production Specs
+│   │   ├── architecture/                     # 4 In-depth Architectural Specifications
+│   │   ├── deep-dives/                       # 3 Production Engineering Deep Dives
+│   │   └── sanitized-code/                   # Runnable Reference implementations (Rust, Axum, Python)
 │
 ├── .gitignore
 └── LICENSE                                   # MIT License
@@ -116,10 +115,10 @@ All code excerpts, network endpoints, credentials, and structural models contain
 
 [![Author: DrLucifer1810](https://img.shields.io/badge/Architect-DrLucifer1810-0ea5e9?style=for-the-badge&logo=github)](https://github.com/DrLucifer1810)
 [![Dossier: PROFILE.md](https://img.shields.io/badge/Full%20Dossier-PROFILE.md-6366f1?style=for-the-badge)](PROFILE.md)
-[![Dossier: Tiếng Việt](https://img.shields.io/badge/Hồ%20sơ-Tiếng%20Việt-emerald?style=for-the-badge)](PROFILE.vi.md)
+[![Vietnamese Edition](https://img.shields.io/badge/Bản%20Tiếng%20Việt-Repository-emerald?style=for-the-badge)](https://github.com/DrLucifer1810/system-architecture-case-studies-vi)
 
 Curated and maintained by **[DrLucifer1810](https://github.com/DrLucifer1810)** — **Principal Systems Architect & Staff Distributed Systems Engineer**.
 
 - **Specialization:** High-concurrency backends (Go/Rust), Edge Kubernetes clusters (K3s), Low-level OS telemetry (Win32), and Agentic AI runtimes (Model Context Protocol).
-- **Comprehensive Profile & Track Record:** Read the complete [**Architect Dossier (PROFILE.md)**](PROFILE.md) | [**Hồ Sơ Năng Lực Kiến Trúc Sư (PROFILE.vi.md)**](PROFILE.vi.md).
+- **Comprehensive Profile & Track Record:** Read the complete [**Architect Dossier (PROFILE.md)**](PROFILE.md) | [**Hồ Sơ Năng Lực Tiếng Việt**](https://github.com/DrLucifer1810/system-architecture-case-studies-vi/blob/main/PROFILE.md).
 - **Engagements:** Open for Fractional CTO advisory, distributed systems reviews, and edge cloud migration consulting.
