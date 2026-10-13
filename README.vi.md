@@ -112,7 +112,14 @@ Toàn bộ các đoạn mã nguồn mẫu, địa chỉ mạng, thông tin đị
 
 ---
 
-## 👨‍💻 Tác Giả & Liên Hệ
+## 👨‍💻 Kiến Trúc Sư Hệ Thống & Tác Giả Chính
 
-Xây dựng và duy trì bởi **[DrLucifer1810](https://github.com/DrLucifer1810)**.  
-Sẵn sàng trao đổi chuyên môn về hệ thống phân tán, kiến trúc tự động hóa doanh nghiệp, hạ tầng Bare-Metal Edge, kỹ nghệ Desktop AI tự hành và telemetry phân tán.
+[![Kiến trúc sư: DrLucifer1810](https://img.shields.io/badge/Kiến%20trúc%20sư-DrLucifer1810-0ea5e9?style=for-the-badge&logo=github)](https://github.com/DrLucifer1810)
+[![Hồ sơ: PROFILE.vi.md](https://img.shields.io/badge/Hồ%20sơ%20chi%20tiết-PROFILE.vi.md-6366f1?style=for-the-badge)](PROFILE.vi.md)
+[![Dossier: English](https://img.shields.io/badge/English-PROFILE.md-blue?style=for-the-badge)](PROFILE.md)
+
+Xây dựng và duy trì bởi **[DrLucifer1810](https://github.com/DrLucifer1810)** — **Principal Systems Architect & Staff Distributed Systems Engineer**.
+
+- **Chuyên môn cốt lõi:** Hệ thống phân tán chịu tải cao (Go/Rust), Cụm Kubernetes Bare-Metal tại biên (K3s), Telemetry tầng hệ điều hành (Win32) và Môi trường AI tự hành (Model Context Protocol).
+- **Hồ sơ năng lực đầy đủ:** Xem chi tiết tại [**Hồ Sơ Năng Lực Kiến Trúc Sư (PROFILE.vi.md)**](PROFILE.vi.md) | [**Architect Dossier (PROFILE.md)**](PROFILE.md).
+- **Phạm vi hợp tác:** Sẵn sàng tham gia vai trò Fractional CTO, tư vấn thiết kế kiến trúc hệ thống và chuyển đổi hạ tầng đám mây sang Bare-Metal On-premise.

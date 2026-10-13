@@ -112,7 +112,14 @@ All code excerpts, network endpoints, credentials, and structural models contain
 
 ---
 
-## 👨‍💻 Author & Contact
+## 👨‍💻 Lead Architect & Principal Contributor
 
-Curated and maintained by **[DrLucifer1810](https://github.com/DrLucifer1810)**.  
-Open for technical discussions on distributed systems, enterprise automation architecture, cognitive edge infrastructure, and decentralized telemetry.
+[![Author: DrLucifer1810](https://img.shields.io/badge/Architect-DrLucifer1810-0ea5e9?style=for-the-badge&logo=github)](https://github.com/DrLucifer1810)
+[![Dossier: PROFILE.md](https://img.shields.io/badge/Full%20Dossier-PROFILE.md-6366f1?style=for-the-badge)](PROFILE.md)
+[![Dossier: Tiếng Việt](https://img.shields.io/badge/Hồ%20sơ-Tiếng%20Việt-emerald?style=for-the-badge)](PROFILE.vi.md)
+
+Curated and maintained by **[DrLucifer1810](https://github.com/DrLucifer1810)** — **Principal Systems Architect & Staff Distributed Systems Engineer**.
+
+- **Specialization:** High-concurrency backends (Go/Rust), Edge Kubernetes clusters (K3s), Low-level OS telemetry (Win32), and Agentic AI runtimes (Model Context Protocol).
+- **Comprehensive Profile & Track Record:** Read the complete [**Architect Dossier (PROFILE.md)**](PROFILE.md) | [**Hồ Sơ Năng Lực Kiến Trúc Sư (PROFILE.vi.md)**](PROFILE.vi.md).
+- **Engagements:** Open for Fractional CTO advisory, distributed systems reviews, and edge cloud migration consulting.
