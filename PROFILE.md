@@ -51,7 +51,7 @@ In the generative AI era, telemetry must never become surveillance. All behavior
 
 ## 🏆 Verified Production Track Record
 
-This repository showcases four end-to-end production architectures that I have personally designed, implemented, and deployed:
+This repository showcases five end-to-end production architectures that I have personally designed, implemented, and deployed:
 
 ```mermaid
 mindmap
@@ -76,6 +76,11 @@ mindmap
       Pre-compiled Regex PIR Scrubber
       Axum JSON-RPC MCP Server Port 5050
       6-D Bloom and Dreyfus Skill Matrix
+    F2F Trading Arena
+      FastAPI and Go Dual Core
+      Redis Streams Event Recovery
+      APScheduler Deterministic Rounds
+      MetaTrader MT4 MT5 Account Bridge
 ```
 
 ### 1. Biztada Distributed Automation Platform

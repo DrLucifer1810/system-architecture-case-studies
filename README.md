@@ -35,6 +35,7 @@ This repository is structured into distinct, modular case studies under the [`pr
 | [**Fusio SuperApp**](./projects/fusio-cognitive-desktop-superapp/) | **Decentralized Cognitive Node & Desktop SuperApp** | Rust (Tauri v2), Python 3.11, React 18, SQLite WAL, TDLib MTProto, LibP2P | [📖 Architecture Blueprint](./projects/fusio-cognitive-desktop-superapp/)<br>• [Runnable Reference Code](./projects/fusio-cognitive-desktop-superapp/sanitized-code/) |
 | [**Local Server Cluster**](./projects/local-server-edge-k8s-cluster/) | **Edge Bare-Metal Kubernetes Micro-Datacenter** | K3d, K3s, Docker Registry, Cloudflare Tunnels, Dual-WAN 4G, LiFePO4 EPS | [📖 Architecture Blueprint](./projects/local-server-edge-k8s-cluster/)<br>• [Runnable Reference Code](./projects/local-server-edge-k8s-cluster/sanitized-code/) |
 | [**MyDNA Coworker Passport**](./projects/mydna-ai-coworker-passport/) | **OS Telemetry, Privacy-First PIR & AI-Coworker Passport** | Rust (Tauri v2), Win32 API, Axum (MCP Server), SQLite WAL, Dreyfus & Bloom Matrix | [📖 Architecture Blueprint](./projects/mydna-ai-coworker-passport/)<br>• [Runnable Reference Code](./projects/mydna-ai-coworker-passport/sanitized-code/) |
+| [**F2F Trading Arena**](./projects/f2f-trading-tournament-engine/) | **Real-Time Trading Tournament & 1v1 PvP Match Engine** | Python (FastAPI), Go, Redis Streams & PubSub, MySQL, Kubernetes, MT4/MT5 | [📖 Architecture Blueprint](./projects/f2f-trading-tournament-engine/)<br>• [Runnable Reference Code](./projects/f2f-trading-tournament-engine/sanitized-code/) |
 
 ---
 
